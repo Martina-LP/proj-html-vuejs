@@ -1,31 +1,37 @@
 <template>
   <div>
     <div class="d-flex">
-      <!-- Prev button -->
+      <!-- Previous button -->
       <div class="prev position-absolute">
         <i class="fas fa-chevron-left"></i>
       </div>
-      <!-- End prev button -->
+      <!-- End previous button -->
       
       <div>
+        <!-- Title and description -->
         <div class="first-text"> {{txtJ}} 
           <strong class="fst-italic fw-bold"> {{txtSJ}} </strong>
         </div>
         <p> {{captionJ}} </p>
+        <!-- End title and description -->
+        <!-- Button -->
         <button class="btn text-uppercase rounded-0">
           <span> {{btnJ}} </span>
         </button>   
+        <!-- End button -->
       </div>
-
+      <!-- Main pictures -->
       <img :src="require('../assets/img/' + imgJ + '.png')" :alt="imgJ" class="jumbo">
       <img :src="require('../assets/img/' + imgJTwo + '.png')" :alt="imgJTwo" class="jumbo male">
-
+      <!-- End main pictures -->
+      <!-- Leaves around main pictures -->
       <img :src="require('../assets/img/' + leafOne + '.png')" :alt="leafOne" class="position-absolute leaf_one"> 
       <img :src="require('../assets/img/' + leafTwo + '.png')" :alt="leafTwo" class="position-absolute leaf_two">   
       <img :src="require('../assets/img/' + leafThree + '.png')" :alt="leafThree" class="position-absolute leaf_three">
       <img :src="require('../assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_four">
       <img :src="require('../assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_fourth">
       <img :src="require('../assets/img/' + leafFive + '.png')" :alt="leafFive" class="position-absolute leaf_five">
+      <!-- End leaves around main pictures -->
 
       <!-- Next button -->
       <div class="next position-absolute">
@@ -33,6 +39,7 @@
       </div>
       <!-- End next button -->
     </div>
+    
     <!-- Lower dots -->
     <div class="d-flex justify-content-center">
       <div class="dots"></div>

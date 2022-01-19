@@ -2,14 +2,16 @@
   <div>
     <div class="position-relative">
       <img :src="require('../assets/img/' + img + '.jpg')" :alt="img" class="w-100 image">
+      <!-- Hover caption -->
       <div class="box">
         <a href="#" class="text">
           <p> {{txt}} </p>
         </a>
         <a href="#">
-          <p class="fst-italic text-decoration-underline"> {{id}} </p>
+          <p class="fst-italic text-decoration-none"> {{id}} </p>
         </a>
       </div>
+      <!-- End hover caption -->
     </div>
   </div>
 </template>

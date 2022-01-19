@@ -1,10 +1,14 @@
 <template>
   <div class="mt-3 ideas">
+    <!-- Icons -->
     <i :class="imgI" class="font-i"></i>
-      <div class="p-3">
-        <div class="h5"> {{txtI}} </div>
-        <span> {{idI}} </span>
-      </div>
+    <!-- End icons -->
+    <!-- Caption -->
+    <div class="p-3">
+      <div class="h5"> {{txtI}} </div>
+      <span> {{idI}} </span>
+    </div>
+    <!-- End caption -->
   </div>
 </template>
 

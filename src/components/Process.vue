@@ -1,6 +1,8 @@
 <template>
   <div class="text-center position-relative">
+    <!-- Title -->
     <div class="txt">Working <strong class="fst-italic">process</strong></div>
+    <!-- End title -->
 
     <div class="row justify-content-center m-0 p-0">
       <Working 
@@ -13,10 +15,11 @@
       :colorI="idea.colorIdeas"
       />
     </div>
-
+    <!-- Wave connecting the icons -->
     <div class="position-absolute top-50">
       <img src="../assets/img/svg/wave.svg" alt="Wave">
     </div>
+    <!-- End wave connecting the icons -->
   </div>
 </template>
 

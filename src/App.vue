@@ -1,20 +1,26 @@
 <template>
   <div id="app">
+    <!-- Fixed label white circle -->
     <div class="qode position-fixed p-2 shadow">
       <a href="#">
         <img src="./assets/img/svg/white-circle.svg" alt="White Circle" class="w-img">
       </a>
     </div>
+    <!-- End fixed label white circle -->
+    <!-- Fixed label shopping cart -->
     <div class="shop position-fixed p-2 shadow">
       <a href="#">
         <img src="./assets/img/svg/shopping-cart.svg" alt="Shopping Cart" class="w-shop">
       </a>
     </div>
+    <!-- End fixed label shopping cart -->
+    <!-- Fixed arrow up -->
     <div class="arrow-back position-fixed">
       <a href="#top">
         <img src="./assets/img/svg/arrow-up.svg" alt="Arrow Up" class="w-100">
       </a>
     </div>
+    <!-- End fixed arrow up -->
 
     <Header />
 

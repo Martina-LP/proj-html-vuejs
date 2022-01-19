@@ -1,10 +1,16 @@
 <template>
   <div class="bg-image">
     <div class="container text-center">
+      <!-- Title -->
       <div class="txt">Want to work with us? Send us <strong class="fst-italic">a message!</strong>
       </div>
-        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur, nemo dolor, porro accusantium, aut autem esse doloremque repellendus beatae repellat exercitationem quibusdam qui labore dolores possimus saepe at iusto.</p>
-        <button class="btn text-uppercase rounded-0"><span>Contact</span></button>
+      <!-- End title -->
+      <!-- Description -->
+      <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur, nemo dolor, porro accusantium, aut autem esse doloremque repellendus beatae repellat exercitationem quibusdam qui labore dolores possimus saepe at iusto.</p>
+      <!-- End description -->
+      <!-- Contact button -->
+      <button class="btn text-uppercase rounded-0"><span>Contact</span></button>
+      <!-- End contact button -->
     </div>
   </div>
 </template>

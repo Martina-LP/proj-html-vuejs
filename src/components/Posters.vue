@@ -1,19 +1,25 @@
 <template>
+  <!-- Post -->
   <div class="position-relative">
     <div class="margin">
+      <!-- Date -->
       <div class="box-position">
         <div class="box-top fst-italic fw-bold"> {{dayP}} </div>
         <div class="box-bottom text-uppercase"> {{monthP}} </div>
       </div>
-      
+      <!-- End date -->
+      <!-- Picture -->
       <img :src="require('../assets/img/' + imgP + '.jpg')" :alt="imgP" class="w-100 box-img">
+      <!-- End picture -->
     </div>
-    
+    <!-- Title and author -->
     <div class="h4 mt-3">
       <a href="#"> {{txtP}} </a>
     </div>
     <span class="fst-italic"> {{idP}} </span>
+    <!-- End title and author -->
   </div>
+  <!-- End post -->
 </template>
 
 <script>
