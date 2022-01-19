@@ -26,13 +26,16 @@
     v-for="(jb, index) in jumbos"
     :key="index"
     :imgJ="jb.imgJumbo"
+    :imgJTwo="jb.imgJumboTwo"
     :txtJ="jb.textJumbo"
     :txtSJ="jb.textStrongJumbo"
+    :captionJ="jb.captionJumbo"
     :btnJ="jb.buttonJumbo"
     :leafOne="jb.leafOne"
     :leafTwo="jb.leafTwo"
     :leafThree="jb.leafThree"
     :leafFour="jb.leafFour"
+    :leafFive="jb.leafFive"
     />
     </div>
   </header>
@@ -86,14 +89,17 @@ export default {
       jumbos: [
         {
           imgJumbo: 'h-2-slider-img-15',
+          imgJumboTwo: 'h-2-slider-img-16',
           textJumbo: 'Devotion that never',
           textStrongJumbo: 'ends',
           captionJumbo: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
           buttonJumbo: 'Read More',
           leafOne: 'h-2-slider-img-12',
           leafTwo: 'h-2-slider-img-13',
-          leafThree: 'h-2-slider-img-14',
-          leafFour: 'short-slider-rev-1-img-2'
+          leafThree: 'h-2-slider-img-17',
+          leafFour: 'short-slider-rev-1-img-2',
+          leafFive: 'h-2-slider-img-14'
+
         },
       ],
       

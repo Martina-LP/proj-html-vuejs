@@ -2,7 +2,7 @@
   <div>
     <div class="d-flex">
       <!-- Prev button -->
-      <div class="prev">
+      <div class="prev position-absolute">
         <i class="fas fa-chevron-left"></i>
       </div>
       <!-- End prev button -->
@@ -17,25 +17,27 @@
         </button>   
       </div>
 
-      <img :src="require('../assets/img/' + imgJ + '.png')" :alt="imgJ" class="w-75 jumbo">
+      <img :src="require('../assets/img/' + imgJ + '.png')" :alt="imgJ" class="jumbo">
+      <img :src="require('../assets/img/' + imgJTwo + '.png')" :alt="imgJTwo" class="jumbo male">
 
       <img :src="require('../assets/img/' + leafOne + '.png')" :alt="leafOne" class="position-absolute leaf_one"> 
       <img :src="require('../assets/img/' + leafTwo + '.png')" :alt="leafTwo" class="position-absolute leaf_two">   
       <img :src="require('../assets/img/' + leafThree + '.png')" :alt="leafThree" class="position-absolute leaf_three">
       <img :src="require('../assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_four">
       <img :src="require('../assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_fourth">
+      <img :src="require('../assets/img/' + leafFive + '.png')" :alt="leafFive" class="position-absolute leaf_five">
 
       <!-- Next button -->
-      <div class="next">
+      <div class="next position-absolute">
         <i class="fas fa-chevron-right"></i>
       </div>
       <!-- End next button -->
     </div>
     <!-- Lower dots -->
     <div class="d-flex justify-content-center">
-      <div class="point"></div>
-      <div class="point"></div>
-      <div class="point"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
     </div>
     <!-- End lower dots -->
   </div>
@@ -47,6 +49,7 @@ export default {
 
     props: {
       imgJ: Image,
+      imgJTwo: Image,
       txtJ: String,
       txtSJ: String,
       captionJ: String,
@@ -54,7 +57,9 @@ export default {
       leafOne: Image,
       leafTwo: Image,
       leafThree: Image,
-      leafFour: Image
+      leafFour: Image,
+      leafFive: Image
+
     },
   
 }
@@ -66,7 +71,7 @@ export default {
 
 .first-text {
   font-size: 80px;
-  padding: 150px 50px 0 300px;
+  padding: 100px 0 0 300px;
   line-height: 80px;
   font-weight: 200;
 }
@@ -78,8 +83,7 @@ p {
 }
 
 .btn {
-  margin-left: 308px;
-  margin-right: 320px;
+  margin-left: 300px;
   padding: 14px 30px;
   font-size: 14px;
   font-weight: bold;
@@ -87,8 +91,7 @@ p {
 }
 
 img {
-  margin-right: 80px;
-  padding: 40px;
+  padding: 100px 0 40px 10px;
 }
 
 .prev, .next {
@@ -102,13 +105,11 @@ img {
 }
 
 .prev {
-  position: absolute;
   left: 0;
   top: 400px;
 }
 
 .next {
-  position:absolute;
   right: 0;
   top: 400px;
 }
@@ -118,36 +119,45 @@ img {
 }
 
 .jumbo {
-  padding: 20px;
+  width: 40%;
+}
+
+.male {
+  margin-right: 60px;
 }
 
 .leaf_one {
-  bottom: 236px;
-  right: 800px;
+  bottom: 380px;
+  right: 980px;
 }
 
 .leaf_two {
-  bottom: 160px;
-  right: 720px;
+  bottom: 148px;
+  right: 930px;
 }
 
 .leaf_three {
-  bottom: 180px;
-  right: 85px;
+  bottom: 134px;
+  right: 50px;
 }
 
 .leaf_four {
-  top: 212px;
-  right: 800px;
+  top: 52px;
+  right: 944px;
 }
 
 .leaf_fourth {
   transform: rotate(90deg);
-  top: 100px;
-  right: 85px;
+  top: 218px;
+  right: 42px;
 }
 
-.point {
+.leaf_five {
+  top: 18px;
+  right: 142px;
+}
+
+.dots {
   content:"";
   width: 10px;
   height: 10px;
