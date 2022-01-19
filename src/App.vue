@@ -67,7 +67,7 @@ export default {
 
   .shop {
     top: 220px;
-    background-color: $primary_bg;
+    background-color: $light;
     margin-left: 5px;
   }
 

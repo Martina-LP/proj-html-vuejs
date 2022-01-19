@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="d-flex">
-      <!-- pulsante prev -->
+      <!-- Prev button -->
       <div class="prev">
         <i class="fas fa-chevron-left"></i>
       </div>
-      <!-- /pulsante prev -->
+      <!-- End prev button -->
       
       <div>
         <div class="first-text"> {{txtJ}} 
@@ -13,7 +13,7 @@
         </div>
         <p> {{captionJ}} </p>
         <button class="btn text-uppercase rounded-0">
-          <span class="filling"> {{btnJ}} </span>
+          <span> {{btnJ}} </span>
         </button>   
       </div>
 
@@ -25,18 +25,19 @@
       <img :src="require('../assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_four">
       <img :src="require('../assets/img/' + leafFour + '.png')" :alt="leafFour" class="position-absolute leaf_fourth">
 
-      <!-- pulsante next -->
+      <!-- Next button -->
       <div class="next">
         <i class="fas fa-chevron-right"></i>
       </div>
-      <!-- /pulsante next -->
+      <!-- End next button -->
     </div>
-    <!-- three points -->
+    <!-- Lower dots -->
     <div class="d-flex justify-content-center">
       <div class="point"></div>
       <div class="point"></div>
       <div class="point"></div>
     </div>
+    <!-- End lower dots -->
   </div>
 </template>
 
@@ -60,25 +61,29 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/general.scss";
+@import "../style/colors.scss";
+
 .first-text {
-  font-size: 90px;
+  font-size: 80px;
   padding: 150px 50px 0 300px;
-  line-height: 1;
-  font-weight: 100;
+  line-height: 80px;
+  font-weight: 200;
 }
 
 p {
-  color: #898988;
+  padding: 20px 30px 10px 300px;
   font-size: 20px;
-  padding: 20px 30px 0 300px;
+  color: $gray;
 }
 
 .btn {
-  margin-left: 300px;
-  margin-right: 415px;
-  padding: 10px 35px;
+  margin-left: 308px;
+  margin-right: 320px;
+  padding: 14px 30px;
   font-size: 14px;
-  border: 3px solid #e1c0b0;
+  font-weight: bold;
+  border: 3px solid $pink;
 }
 
 img {
@@ -88,8 +93,8 @@ img {
 
 .prev, .next {
   font-size: 20px;
-  color: white;
-  background-color: #e1c0b0;
+  color: $light;
+  background-color: $pink;
   border-radius: 50%;
   padding: 0 10px 10px 10px;
   height: 30px;
@@ -147,7 +152,7 @@ img {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #e1c0b0;
+  background-color: $pink;
   margin: 20px 10px;
   
   &:hover {
@@ -156,8 +161,8 @@ img {
 }
 
 button:hover {
-  background-color: #e1c0b0;
-  color: white;
+  background-color: $pink;
+  color: $light;
 }
 
 </style>

@@ -1,3 +1,6 @@
+@import "bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,4 +11,17 @@
 body {
   width: 100%;
   font-family: 'Mulish', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+
+  &:hover {
+    color: $dark;
+  }
 }

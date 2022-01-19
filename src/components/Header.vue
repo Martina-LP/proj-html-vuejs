@@ -124,7 +124,7 @@ header {
 
         &.current {
           color: $dark;
-          border-bottom: 4px solid $pink_border;
+          border-bottom: 4px solid $pink;
           line-height: 8px;
         }
       }
