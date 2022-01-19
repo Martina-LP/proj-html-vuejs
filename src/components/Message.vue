@@ -4,7 +4,7 @@
       <div class="txt">Want to work with us? Send us <strong class="fst-italic">a message!</strong>
       </div>
         <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur, nemo dolor, porro accusantium, aut autem esse doloremque repellendus beatae repellat exercitationem quibusdam qui labore dolores possimus saepe at iusto.</p>
-        <button class="btn text-uppercase rounded-0"><span>contact</span></button>
+        <button class="btn text-uppercase rounded-0"><span>Contact</span></button>
     </div>
   </div>
 </template>
@@ -43,6 +43,7 @@ export default {
     padding: 15px 40px;
     margin: 20px;
     font-size: 14px;
+    font-weight: bold;
     color: $dark;
     background-color: $lighter_aqua;
 

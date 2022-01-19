@@ -73,7 +73,7 @@ export default {
   font-size: 80px;
   padding: 100px 0 0 300px;
   line-height: 80px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 p {
@@ -88,6 +88,11 @@ p {
   font-size: 14px;
   font-weight: bold;
   border: 3px solid $pink;
+}
+
+.btn:hover {
+  background-color: $pink;
+  color: $light;
 }
 
 img {
@@ -168,11 +173,6 @@ img {
   &:hover {
     transform: scale(1.2);
   }
-}
-
-button:hover {
-  background-color: $pink;
-  color: $light;
 }
 
 </style>

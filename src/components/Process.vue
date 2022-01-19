@@ -37,25 +37,25 @@ export default {
             imgIdeas: 'bi bi-lightbulb-fill',
             textIdeas: 'First theres an idea',
             idIdeas:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-            colorIdeas: '#badac9' 
+            colorIdeas: '#BADAC9' 
           },
           {
             imgIdeas: 'bi bi-chat',
             textIdeas: 'Then we talk about',
             idIdeas:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-            colorIdeas: '#f8d12d'
+            colorIdeas: '#F8D12D'
           },
           {
             imgIdeas: 'bi bi-cloud-fill',
             textIdeas: 'And we think about',
             idIdeas:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-            colorIdeas: '#80465f'
+            colorIdeas: '#80465F'
           },
           {
             imgIdeas: 'bi bi-pencil',
             textIdeas: 'So we draw along',
             idIdeas:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself.',
-            colorIdeas: '#eb6950'
+            colorIdeas: '#EB6950'
           },
         ]
       }
@@ -64,6 +64,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/general.scss";
+@import "../style/general.scss";
+
 .txt {
   font-size: 65px;
   margin-bottom: 100px;

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container text-center">
+    <div class="container">
       <div class="row">
         <div class="link d-flex">
           <div class="col">
@@ -95,39 +95,41 @@ export default {
 footer {
   width: 100%;
   height: 160px;
-  margin-top: 60px;
-  padding: 40px 40px;
+  margin-top: 100px;
+  padding: 50px 30px;
   background-color: $aqua_bg;
 
   .container {
-    padding: 30px 0;
-    background-color: $aqua_bg;
 
     .list {
+
       ul {
         justify-content: space-between;
+        margin-bottom: 3px;
 
         li {
-          margin-left: 20px;
           font-size: 14px;
           list-style-type: none;
 
           a {
             text-decoration: none;
             color: $dark;
-            font-weight: 400;
+            font-weight: 300;
             margin-right: 20px;
             cursor: pointer;
+
+            &:hover {
+              color: $light;
+            }
           }
 
           a, h6 {
             display: inline-block;
             color: $dark;
             text-decoration: none;
-            font-weight: bold;
 
             i {
-              margin-left: 12px;
+              margin: 0 14px 0 2px;
             }
 
           }

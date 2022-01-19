@@ -22,12 +22,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../style/colors.scss";
+
 .font-i {
   font-size: 50px;
-  padding:55px 60px;
+  padding: 55px 60px;
   border-radius: 50%;
-  background-color: #faf7f1;
-  color: #badac9;
+  background-color: $working_bg;
+  color: $lightbulb;
 }
 
 .h5 {
@@ -36,7 +38,7 @@ export default {
 
 span {
   line-height: 1.8;
-  color:#828282;
+  color: $lightgray;
 }
 
 </style>
